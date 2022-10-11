@@ -1,1 +1,1 @@
-this is a scripting repository
+File 0-alias is a script that creates an alias.
