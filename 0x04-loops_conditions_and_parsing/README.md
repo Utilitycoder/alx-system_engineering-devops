@@ -8,16 +8,16 @@ In this project, I began working loops and conditionals statements in Bash.
   * [0-RSA_public_key.pub](./0-RSA_public_key.pub): A public SSH key uploaded for the
   purposes of ALX School.
 
-* **1. For Holberton School loop**
-  * [1-for_holberton_school](./1-for_holberton_school): Bash script that displays
+* **1. For Best School loop**
+  * [1-for_best_school](./1-for_best_school): Bash script that displays
   `Best School` 10 times using a `for` loop.
 
-* **2. While Holberton School loop**
-  * [2-while_holberton_school](./2-while_holberton_school): Bash script that
+* **2. While Best School loop**
+  * [2-while_best_school](./2-while_best_school): Bash script that
   displays `Best School` 10 times using a `while` loop.
 
-* **3. Until Holberton School loop**
-  * [3-until_holberton_school](./3-until_holberton_school): Bash script that displays
+* **3. Until Best School loop**
+  * [3-until_best_school](./3-until_best_school): Bash script that displays
   `Best School` 10 times using an `until` loop.
 
 * **4. If 9, say Hi!**
