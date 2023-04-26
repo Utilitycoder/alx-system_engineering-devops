@@ -1,12 +1,15 @@
-file { '/home/user/.ssh/config':
-  ensure => 'file',
-  owner  => 'user',
-  group  => 'user',
-  mode   => '0600',
+file { '/etc/ssh/ssh_config':
+  ensure  => 'file',
+  owner   => 'root',
+  group   => 'root',
+  mode    => '0644',
   content => "
-    Host 54.160.86.54
-      IdentityFile ~/.ssh/school
-      PreferredAuthentications publickey
-      PasswordAuthentication no
+    Host *
+        PasswordAuthentication no
+        IdentityFile ~/.ssh/school
+        SendEnv LANG LC_*
+        HashKnownHosts yes
+        GSSAPIAuthentication yes
+        GSSAPIDelegateCredentials no
   ",
 }
