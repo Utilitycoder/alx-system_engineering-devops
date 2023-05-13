@@ -2,6 +2,6 @@
 
 This repository features a blog that explains what happens behing the scene when **google.com** is typed into the browser.
 
-## Files ::file
+## Files :file
 
-(0-blog_post)[./0-blog_post]
+[0-blog_post](./0-blog_post)
