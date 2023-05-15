@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Configures a ufw firewall to block all incoming traffic
+#+ except for TCP ports 22, 443, 80 and 8080, and redirect port 8080 to 80.
+
+# Install necessary tools
+sudo apt-get update
+sudo apt-get install ufw
+
+# Configure ufw
+sudo ufw default deny incoming
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 8080/tcp
+
+# Enable ufw
+sudo ufw enable
+
+# Add iptables rule to redirect port 8080 to 80
+sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+
+# Make iptables rules persistent after reboot
+sudo apt-get install iptables-persistent
+# During the installation process, you will be asked if you want to save existing iptables rules. Choose "Yes" for both ipv4 and ipv6.
+
+# Show ufw and iptables configurations
+sudo ufw status verbose
+sudo iptables -t nat -L -n -v
+
