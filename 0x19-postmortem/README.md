@@ -1,0 +1,2 @@
+Postmortems, the chronicles of technical triumphs and occasional tribulations. Today, dear readers, we delve into the tumultuous tale of a web stack outage that sent my budding web application into a momentary hibernation. 
+Gather 'round as we recount the saga of code deployments, misconfigurations, and a feisty database server that decided it had simply had enough disk space for one lifetime (chuckles).
